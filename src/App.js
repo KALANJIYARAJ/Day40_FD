@@ -34,10 +34,8 @@ function App() {
           formik.resetForm();
         } else {
 
-          const product = await axios.put(`${config.api}/product/${productId}`, values);
-          console.log(values);
-
-          const pIndex = productList.findIndex((p) => p._id == productId);
+          await axios.put(`${config.api}/product/${productId}`, values);
+          const pIndex = productList.findIndex((p) => p.id == productId);
 
           productList[pIndex] = values;
           setProductList([...productList]);
