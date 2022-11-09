@@ -1,3 +1,3 @@
 export const config = {
-    api : "http://localhost:3003"
+    api : "https://nodeb39wdt2.herokuapp.com/" //"http://localhost:3003"
 }
